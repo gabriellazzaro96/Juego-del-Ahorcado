@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
     <title>Ahorcadito</title>
 </head>
 <body>
     <header>
-        <img src="/img/Vector.png">
+        <img src="/img/Vector.png" id="logo">
     </header>
-    <main>
+    <main class="ahorcado">  
         <section class="juego">
             <div class="dibujo">
 
@@ -24,16 +27,15 @@
 
             </div>
 
-        </section>
-        
-        <!-- Imagen del ahoradito -->       
+            <!-- Imagen del ahoradito -->       
+            <div class="ingreso-letras">            
+                <textarea id="ingreso-letras-textarea" placeholder="Ingerese una letra"></textarea>
+            </div>
+        </section>      
 
-        <textarea>
-
-        </textarea>
         <section class="botones">
-            <a href="juego.html" class="btn-azul"><button>Nuevo juego</button></a>
-            <a href="index.html" class="btn-blanco"><button>Desistir</button></a>
+            <a href="juego.html"><button  class="btn-azul">Nuevo juego</button></a>
+            <a href="index.html"><button  class="btn-blanco" id="btnb-ahorcado">Desistir</button></a>
         </section>
     </main>
     <footer>
